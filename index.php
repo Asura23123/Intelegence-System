@@ -82,6 +82,12 @@
                 </a>
               </li>
 
+              <li>
+                <a href="index.php?page=Form" class="<?php echo ($_GET['page'] ?? '') === 'Form' ? 'active': '';  ?>">
+                  <i class="bi bi-circle"></i><span>Add Staff</span>
+                </a>
+              </li>
+
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -114,6 +120,10 @@
                   case'London':
                     include 'Modules/NmValo.php';
                     break;       
+                    case'Form':
+                    include 'Modules/Form.php';
+                    break;
+
         }
       } 
       
