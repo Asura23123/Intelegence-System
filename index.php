@@ -87,6 +87,11 @@
                   <i class="bi bi-circle"></i><span>Add Staff</span>
                 </a>
               </li>
+               <li>
+                <a href="index.php?page=Staff" class="<?php echo ($_GET['page'] ?? '') === 'Staff' ? 'active': '';  ?>">
+                  <i class="bi bi-circle"></i><span>Staff List</span>
+                </a>
+              </li>
 
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -122,6 +127,9 @@
                     break;       
                     case'Form':
                     include 'Modules/Form.php';
+                    break;
+                    case'Staff':
+                    include 'Modules/Staff.php';
                     break;
 
         }
